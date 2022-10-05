@@ -1,0 +1,115 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    flex-direction: column;
+    background-image: linear-gradient(to right top, black, white);
+}
+
+.container{
+    width: 100%;
+    background-color: royalblue;
+    padding: 30px;
+    max-width: 500px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px black;
+}
+
+.inputValue>input{
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    margin: 0px 5px;
+}
+
+.inputValue>button{
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid gray;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 0px 5px;
+    opacity: .6;
+    pointer-events: none;
+}
+
+button.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.inputValue{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tasks{
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+.title{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 30px 0px;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+.item{
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.item p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+    letter-spacing: 1px;
+}
+
+.item.lineThrough p{
+    text-decoration: line-through;
+    color: gray;
+}
+
+i{
+    padding: 10px;
+    color: white;
+    background-color: royalblue;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.item-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+}
+
